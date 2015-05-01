@@ -1,7 +1,7 @@
 # SLiPP-JPA-Study
 1. JavaSE-JPA : JavaSE 환경 JPA 프로젝트
-2. JavaEE-JPA : 
-3. 
+2. SpringBoot-JPA : Spring 환경 JPA 프로젝트
+3. SpringBoot-Data-JPA : Spring 환경 Data-JPA 프로젝트
 
 
 <h3>blog</h3>
