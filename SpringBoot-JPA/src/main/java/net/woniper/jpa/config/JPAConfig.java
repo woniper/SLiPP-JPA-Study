@@ -30,7 +30,6 @@ public class JPAConfig {
 
         // persistence 설정
         Properties properties = new Properties();
-        properties.setProperty("hibernate.connection.url", "jdbc:h2:file:./data/jpa;DB_CLOSE_ON_EXIT=FALSE");
         properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
         properties.setProperty("hibernate.show_sql", "true");
 
