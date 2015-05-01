@@ -1,0 +1,10 @@
+ORM을 쓰지 않는 경우 이런식의 쿼리로 데이터를 가져온다.
+select * from tbl_user u join tbl_order o on u.user_id = o.user_id
+where u.user_id = #{value};
+
+또는
+
+select * from tbl_user where user_id = #{value};
+후
+select * from tbl_order where user_id = #{value};
+이런식으로 쿼리를 두번 날려 가져온다.
