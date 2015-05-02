@@ -1,7 +1,7 @@
 # SLiPP-JPA-Study
-1. JavaSE-JPA : JavaSE 환경 JPA 프로젝트
-2. SpringBoot-JPA : Spring 환경 JPA 프로젝트
-3. SpringBoot-Data-JPA : Spring 환경 Data-JPA 프로젝트
+1. <a href='https://github.com/woniper/SLiPP-JPA-Study/tree/master/JavaSE-JPA'>JavaSE-JPA : JavaSE 환경 JPA 프로젝트</a>
+2. <a href='https://github.com/woniper/SLiPP-JPA-Study/tree/master/SpringBoot-JPA'>SpringBoot-JPA : Spring 환경 JPA 프로젝트</a>
+3. <a href='https://github.com/woniper/SLiPP-JPA-Study/tree/master/SpringBoot-Data-JPA'>SpringBoot-Data-JPA : Spring 환경 Data-JPA 프로젝트</a>
 
 
 <h3>blog</h3>
