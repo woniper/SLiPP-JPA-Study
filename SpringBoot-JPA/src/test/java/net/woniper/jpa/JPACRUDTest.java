@@ -24,7 +24,7 @@ import static org.junit.Assert.assertNull;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = SpringBootJpaApplication.class)
 @WebAppConfiguration
-public class SpringBootJpaApplicationTests {
+public class JPACRUDTest {
 
 	@PersistenceUnit
 	private EntityManagerFactory persistenceEntityManager;
