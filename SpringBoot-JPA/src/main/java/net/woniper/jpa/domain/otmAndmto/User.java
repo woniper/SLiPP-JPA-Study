@@ -1,6 +1,7 @@
-package net.woniper.jpa.domain;
+package net.woniper.jpa.domain.otmAndmto;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -69,6 +70,13 @@ public class User {
         }
 
         return totalPrice;
+    }
+
+    public boolean addOrder(Order order) {
+        if(orders == null)
+            orders = new ArrayList<>();
+
+        return this.orders.add(order);
     }
 
     @Override

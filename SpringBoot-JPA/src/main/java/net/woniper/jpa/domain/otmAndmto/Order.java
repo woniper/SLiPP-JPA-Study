@@ -1,4 +1,4 @@
-package net.woniper.jpa.domain;
+package net.woniper.jpa.domain.otmAndmto;
 
 import javax.persistence.*;
 
@@ -20,6 +20,8 @@ public class Order {
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private User user;
+
+    public Order() {}
 
     public Order(String orderName, String note, int price, User user) {
         this.orderName = orderName;

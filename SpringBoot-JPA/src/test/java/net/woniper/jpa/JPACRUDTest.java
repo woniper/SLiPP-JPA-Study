@@ -1,7 +1,8 @@
 package net.woniper.jpa;
 
-import net.woniper.jpa.domain.Order;
-import net.woniper.jpa.domain.User;
+import net.woniper.jpa.config.JPAConfig;
+import net.woniper.jpa.domain.otmAndmto.Order;
+import net.woniper.jpa.domain.otmAndmto.User;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,7 +23,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = SpringBootJpaApplication.class)
+@SpringApplicationConfiguration(classes = {SpringBootJpaApplication.class, JPAConfig.class})
 @WebAppConfiguration
 public class JPACRUDTest {
 
