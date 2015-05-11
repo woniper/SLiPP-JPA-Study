@@ -26,7 +26,7 @@ public class OneToManyAndManyToOneTest {
 	private EntityManager entityManager;
 
 	@Test
-	public void oneToOneTest() {
+	public void oneToManyAndManyToOneTest() {
 		Order order = new Order();
 		order.setOrderName("test order");
 		order.setPrice(123);

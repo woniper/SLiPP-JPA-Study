@@ -26,7 +26,7 @@ public class ManyToManyTest {
 	private EntityManager entityManager;
 
 	@Test
-	public void oneToOneTest() {
+	public void manyToManyTest() {
 
 		Category category = new Category();
 		category.setName("IT");
