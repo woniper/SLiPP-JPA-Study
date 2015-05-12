@@ -12,3 +12,4 @@
 4. <a href='http://blog.woniper.net/263'>@OneToOne, 1:1 관계 매핑</a> <br/>
 5. <a href='http://blog.woniper.net/264'>@OneToMany / @ManyToOne, 1:N / N:1 관계 매핑</a> <br/>
 6. <a href='http://blog.woniper.net/265'>@ManyToMany, N:M 관계 매핑</a> <br/>
+7. <a href='http://blog.woniper.net/266'>Entity 객체 생명주기(Lifecycle)와 Persistence Context</a> <br/>
