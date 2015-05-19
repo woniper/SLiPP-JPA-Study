@@ -37,6 +37,7 @@ public class CrudTest {
         user.addOrder(new Order("order2", "test2", 100, user));
         user.setCreateDate(new Date());
         userRepository.save(user);
+        userRepository.flush();
     }
 
     @Test

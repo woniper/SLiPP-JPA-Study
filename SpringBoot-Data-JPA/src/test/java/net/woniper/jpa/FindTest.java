@@ -42,6 +42,7 @@ public class FindTest {
         }
         user.setCreateDate(new Date());
         userRepository.save(user);
+        userRepository.flush();
     }
 
     @Test
