@@ -17,5 +17,5 @@
 7. <a href='http://blog.woniper.net/266'>Entity 객체 생명주기(Lifecycle)와 Persistence Context</a> <br/>
 
 <h3>Spring Data JPA</h3>
-1. 
+1. <a href='http://blog.woniper.net/270'>Spring Data JPA 사용하기</a> <br/>
 2. 
