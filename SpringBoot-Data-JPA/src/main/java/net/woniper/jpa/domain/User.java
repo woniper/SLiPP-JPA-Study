@@ -1,16 +1,17 @@
 package net.woniper.jpa.domain;
 
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
  * Created by woniper on 15. 4. 30..
  */
 @Entity(name = "tbl_user")
-public class User {
-
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer userId;
+public class User extends AbstractPersistable<Integer> {
 
     private String username;
 
@@ -18,16 +19,11 @@ public class User {
 
     private String address;
 
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createDate = new Date();
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Order> orders;
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+    private List<Order> orders = new ArrayList<>();
 
     public String getUsername() {
         return username;
@@ -53,12 +49,24 @@ public class User {
         this.address = address;
     }
 
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
     public List<Order> getOrders() {
         return orders;
     }
 
     public void setOrders(List<Order> orders) {
         this.orders = orders;
+    }
+
+    public void addOrder(Order order) {
+        this.orders.add(order);
     }
 
     public int totalPrice() {
@@ -74,7 +82,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId +
+                "userId=" + getId() +
                 ", username='" + username + '\'' +
                 ", nickName='" + nickName + '\'' +
                 ", address='" + address + '\'' +

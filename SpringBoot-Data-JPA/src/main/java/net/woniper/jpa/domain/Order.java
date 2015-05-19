@@ -1,15 +1,14 @@
 package net.woniper.jpa.domain;
 
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
 import javax.persistence.*;
 
 /**
  * Created by woniper on 15. 4. 30..
  */
 @Entity(name = "tbl_order")
-public class Order {
-
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer orderId;
+public class Order extends AbstractPersistable<Integer> {
 
     private String orderName;
 
@@ -21,19 +20,14 @@ public class Order {
     @JoinColumn(name = "user_id")
     private User user;
 
+    public Order() {
+    }
+
     public Order(String orderName, String note, int price, User user) {
         this.orderName = orderName;
         this.note = note;
         this.price = price;
         this.user = user;
-    }
-
-    public Integer getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(Integer orderId) {
-        this.orderId = orderId;
     }
 
     public String getOrderName() {
@@ -71,7 +65,7 @@ public class Order {
     @Override
     public String toString() {
         return "Order{" +
-                "orderId=" + orderId +
+                "orderId=" + getId() +
                 ", orderName='" + orderName + '\'' +
                 ", note='" + note +
                 '}' + "\n";
