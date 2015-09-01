@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="jdbc.driverClassName">com.mysql.jdbc.Driver</entry>
+    <entry key="jdbc.url"><![CDATA[jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&charaterEncoding=utf-8]]></entry>
+    <entry key="jdbc.username">root</entry>
+    <entry key="jdbc.password">1234</entry>
+</properties>
